@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { redirect, notFound } from "next/navigation";
 import { Navbar } from "@/components/Navbar";
 import { getCurrentUser } from "@/lib/auth";

@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { prisma } from "@/lib/prisma";
 import { setSessionCookie, verifyPassword } from "@/lib/auth";
 import { jsonError, jsonOk, validationError } from "@/lib/api";

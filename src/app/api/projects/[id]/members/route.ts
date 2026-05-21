@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { prisma } from "@/lib/prisma";
 import { requireAuth } from "@/lib/auth";
 import { ApiError, requireProjectAdmin, requireProjectMember } from "@/lib/rbac";

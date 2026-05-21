@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { clearSessionCookie } from "@/lib/auth";
 import { jsonOk } from "@/lib/api";
 
