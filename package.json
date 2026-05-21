@@ -13,6 +13,7 @@
     "lint": "eslint",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
+    "railway:predeploy": "sh scripts/railway-predeploy.sh",
     "db:push": "prisma db push"
   },
   "dependencies": {
