@@ -2,7 +2,6 @@
 builder = "nixpacks"
 
 [deploy]
-preDeployCommand = "sh scripts/railway-predeploy.sh"
-startCommand = "npm run start"
+startCommand = "sh scripts/railway-start.sh"
 healthcheckPath = "/api/health"
 restartPolicyType = "on_failure"

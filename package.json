@@ -7,13 +7,12 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
-    "start": "next start",
+    "build": "node scripts/railway-ensure-db.mjs && prisma generate && next build",
+    "start": "sh scripts/railway-start.sh",
     "postinstall": "prisma generate",
     "lint": "eslint",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
-    "railway:predeploy": "sh scripts/railway-predeploy.sh",
     "db:push": "prisma db push"
   },
   "dependencies": {
