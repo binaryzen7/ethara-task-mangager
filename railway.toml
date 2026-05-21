@@ -2,6 +2,7 @@
 builder = "nixpacks"
 
 [deploy]
+preDeployCommand = "npm run db:deploy"
 startCommand = "npm run start"
 healthcheckPath = "/api/health"
 restartPolicyType = "on_failure"
